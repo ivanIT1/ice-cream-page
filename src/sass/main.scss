@@ -7,7 +7,7 @@
 
 // Переменные в css формате
 @import './utils/variables';
-
+@import './utils/mixins';
 
 // Стили для файла с примером HTML-фрагмента
 @import './components/header';
@@ -19,4 +19,3 @@
 @import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
-
