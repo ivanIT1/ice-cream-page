@@ -5,9 +5,12 @@
 // Сбрасывает глобальные стили
 @import './base/reset';
 
-// Переменные в css формате
+// Переменные
 @import './utils/variables';
 
+// Добавляет глобальные стили
+@import './components/container';
+@import './base/global';
 
 // Стили для файла с примером HTML-фрагмента
 @import './components/header';
