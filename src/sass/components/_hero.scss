@@ -45,6 +45,12 @@ a {
     position: relative;
     bottom: 0;
     // left: 0;
+
+    background-image: url(../images/hero-circle-mobile.png);
+    background-repeat: no-repeat;
+    background-position: right -62px bottom 75px;
+    background-size: 345px 345px;
+    overflow: visible;
     
     @media screen and (min-width: 768px) {
         width: 100%;
@@ -53,18 +59,22 @@ a {
     }
 }
 
-.hero__bg-wrapper {
-    position: absolute;
-    bottom: 0;
-    width: 345px;
-    height: 345px;
-    background-image: url(../images/hero-circle-mobile.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin-left: 1px;
-    margin-top: 1px;
-}
+// .hero__bg-wrapper {
+//     position: absolute;
+//     bottom: 0;
+//     width: 345px;
+//     height: 345px;
+//     background-image: url(../images/hero-circle-mobile.png);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: contain;
+    
+//     // margin-left: 1px;
+//     // margin-top: 1px;
+
+// // overflow: hidden;
+
+// }
 
 .nav-bar {
     width: 100%;
