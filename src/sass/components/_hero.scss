@@ -20,7 +20,7 @@ a {
 }
 
 .hero {
-    position: relative;
+    // position: relative;
 
     background-color: $second-accent-color;
 
@@ -33,7 +33,44 @@ a {
     width: 100%;
     height: 502px;
 
-    padding-top: 193px;
+    // padding-top: 83px;
+
+    
+}
+
+.hero__container {
+    padding-top: 6px;
+    width: 320px;
+    height: 502px;
+    position: relative;
+    bottom: 0;
+    // left: 0;
+    
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        height: 399px;
+        
+    }
+}
+
+.hero__bg-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 345px;
+    height: 345px;
+    background-image: url(../images/hero-circle-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 50px;
+    outline: solid 1px red;
+    margin-bottom: 137px;
 }
 
 .hero__ice-cream {
@@ -41,10 +78,12 @@ a {
     bottom: 0;
     right: 32px;
 
-    // z-index: 1;
 }
 
 .hero__title {
+    position: relative;
+    // top: 193px;
+
     font-family: Titan One;
     font-weight: 400;
     font-size: 22px;
@@ -54,11 +93,8 @@ a {
     color: $third-text-color;
 
     width: 218px;
-    height: 106px;
 
     margin-bottom: 19px;
-
-    // z-index: 2;
 }
 
 .hero__title-accent {
@@ -67,15 +103,15 @@ a {
     color: $accent-color;
 }
 
-.hero__button-list {
-    display: flex;   
+.hero__button-products, 
+.hero__button-about {
+    position: relative;
+    // top: 318px;
+    display: inline-block;
+    padding: 9px 15px;
 }
 
-.hero-item {
-    height: inherit;
-}
-
-.hero__button-item:first-child {
+.hero__button-products {
     margin-right: 8px;
 }
 
