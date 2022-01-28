@@ -4,10 +4,9 @@
  */
 // Сбрасывает глобальные стили
 @import './base/reset';
-
+@import './base/base';
 // Переменные в css формате
 @import './utils/variables';
-
 
 // Стили для файла с примером HTML-фрагмента
 @import './components/header';
@@ -19,4 +18,3 @@
 @import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
-
