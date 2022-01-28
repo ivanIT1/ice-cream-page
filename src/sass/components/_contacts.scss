@@ -1,24 +1,24 @@
 .section {
     width: 1280px;
     background-color: $background-color;
-    padding-top: 51px;
-    padding-right: 44px;
-    padding-bottom: 62px;
-    padding-left: 43px;
+   
 }
 .container {
     display: flex;
     justify-content: center;
+    
 }
 .card {
-    width: 330px;
-    height: 572px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 24px;
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    padding-top: 51px;
+    padding-right: 44px;
+    padding-bottom: 62px;
+    padding-left: 43px;
     /*задний цвет сделала таким пока нет на фоне как на макете картинки*/
 }
 .card__item {
@@ -28,35 +28,79 @@
     }
 }
 .card__title {
+    font-family: DM Sans;
     background-color: $second-background-color;
     border-radius: 6px;
     color: $third-text-color;
     width: 73px;
     text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    margin-bottom: 32px;
 }
 .card__title--middle {
+    font-family: DM Sans;
     width: 138px;
     background-color: $third-background-color;
     color: $third-text-color;
     text-align: center;
     border-radius: 6px;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
 }
 .card__name {
+    font-family: DM Sans;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
     color: $main-text-color;
+    margin-bottom: 10px;
 }
 .card__text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.81;
     color: $second-text-color;
     width: 243px;
 }
+.card__day {
+    margin-bottom: -2px;
+    font-family: DM Sans;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $main-text-color;
+}
 .card__schedule {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
     color: $third-accent-color;
+    margin-bottom: 15px;
 }
 .card__line {
     border: 1px solid $review-underline;
     /* надо разобраться */
     width: 1px;
+
 }
 .card__contacts {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.81;
     color: $second-text-color;
+    margin-top: 32px;
 }
 
