@@ -2,11 +2,13 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-// Сбрасывает глобальные стили
+// Глобальные стили
 @import './base/reset';
 @import './base/base';
+
 // Переменные в css формате
 @import './utils/variables';
+@import './utils/mixins';
 
 // Стили для файла с примером HTML-фрагмента
 @import './components/header';
