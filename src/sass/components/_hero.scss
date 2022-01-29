@@ -53,8 +53,13 @@ a {
     overflow: visible;
     
     @media screen and (min-width: 768px) {
-        width: 100%;
+        width: 768px;
         height: 399px;
+        padding-top: 37px;
+
+    background-position: right -62px bottom 75px;
+    background-size: 325px 325px;
+    overflow: visible;
         
     }
 }
@@ -81,12 +86,22 @@ a {
     height: 50px;
     outline: solid 1px red;
     margin-bottom: 137px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 15px;
+    }
+
 }
 
 .hero__ice-cream {
     position: absolute;
     bottom: 0;
     right: 32px;
+
+    @media screen and (min-width: 768px) {
+        right: 247px;
+    }
+
 
 }
 
