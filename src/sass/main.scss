@@ -4,11 +4,11 @@
  */
 // Глобальные стили
 @import './base/reset';
-@import './base/base';
 
 // Переменные в css формате
 @import './utils/variables';
 @import './utils/mixins';
+@import './base/base';
 
 // Стили для файла с примером HTML-фрагмента
 @import './components/button';
