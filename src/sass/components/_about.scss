@@ -1,67 +1,43 @@
 .about {
   @include section-padding(40px, 40px);
   background-color: $background-color;
-}
 
-.about__label {
-  font-family: Titan One, cursive;
-  font-size: 18px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/milk_mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom 100px right 0;
 
-  color: $third-accent-color;
-
-  margin-bottom: 15px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 26px;
-    line-height: 1.15;
-    margin-bottom: 16px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milk@2x_mobile.png');
+    }
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 30px;
-    line-height: 1.13;
+    background-image: url('../images/milk_desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milk@2x_desktop.png');
+    }
   }
 }
 
 .about__title {
-  font-family: Titan One, cursive;
-  font-size: 34px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  margin: 0 auto;
-
-  color: $accent-color;
-
   margin-bottom: 26px;
 
-  @media screen and (max-width: 767px) {
-    max-width: 200px;
-  }
-
   @media screen and (min-width: 768px) {
-    font-size: 48px;
-    line-height: 1.15;
     margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 48px;
-    line-height: 1.15;
+    margin-bottom: 100px;
   }
 }
 
 .about__text {
-  font-family: DM Sans, sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.62;
   margin: 0 auto 36px;
   color: $main-text-color;
 
@@ -77,10 +53,6 @@
 }
 
 .about__text--lighter {
-  font-family: DM Sans, sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.62;
   margin: 0 auto 20px;
 
   color: $second-text-color;
@@ -122,7 +94,6 @@
   background: $third-text-color;
   border-radius: 22px;
   border: none;
-  font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -158,14 +129,17 @@
 }
 
 .about__picture {
-  // margin: 0 auto 46px;
-
   @media screen and (max-width: 767px) {
     margin: 0 auto 46px;
   }
 
   @media screen and (min-width: 768px) {
     margin-right: 17px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: -50px;
+    margin-right: 74px;
   }
 }
 
