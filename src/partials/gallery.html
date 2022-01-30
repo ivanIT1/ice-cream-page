@@ -1,12 +1,20 @@
-<div class="container gallery">
-  <picture>
-    <source
-      srcset="./images/gallery-pc-1x.png 1x, ./images/gallery-pc-2x.png 2x"
-      media="(max-width: 1200px)"
-      type="image/png"
-    />
-    <img src="./images/gallery-pc-1x.png" alt="gallery" width="450px" />
-    <source />
-    <source />
-  </picture>
-</div>
+<section>
+  <div class="container gallery">
+    <picture>
+      <source
+        srcset="./images/gallery-pc-1х.png 1x, /images/gallery-pc-2x.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="./images/gallery-tablet-1х.png 1x, ./images/gallery-tablet-2x.png 2x"
+        media="(min-width: 768px) and (max-width: 1199px)"
+      />
+      <source
+        srcset="./images/gallery-mob-1х.png 1x, /images/gallery-mob-2x.png 2x"
+        media="(max-width: 767px)"
+      />
+
+      <img src="./images/gallery-pc-1х.png" alt="gallery" />
+    </picture>
+  </div>
+</section>
